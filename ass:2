@@ -1,0 +1,15 @@
+def armstrong(n):
+    rev=0
+    while n>0:
+        rem=n%10
+        rev=rev+rem*rem*rem
+        n=n//10
+    if num==rev:
+        return True
+    return False
+n=int(input())
+num=n
+if armstrong(n):
+    print('armstrong number')
+else:
+    print('not  an armstrong number')
